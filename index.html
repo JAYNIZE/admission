@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Admission Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            color:white/*change the text color to white*/
+        }
+        .container {
+            background: blue;
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(15, 143, 148);
+        }
+        input, select, textarea {
+            width: 90%;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: white
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Admission Portal</h2>
+        <form action="submit.php" method="POST" enctype="multipart/form-data">
+            <label>Full Name:</label><br>
+            <input type="text" name="name" required><br>
+            
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" name="phone" required><br>
+
+            <label>National ID (Optional):</label><br>
+            <input type="text" name="national_id"><br>
+
+            <label>Profile Photo (Optional):</label><br>
+            <input type="file" name="photo" accept="image/*"><br>
+
+            <label>Password:</label><br>
+            <input type="password" name="password" required><br>
+
+            <label>KNEC Certificate or Result Slip:</label><br>
+            <input type="file" name="knec_certificate" accept=".pdf,.docx,.jpg,.png" required><br>
+
+            <label>Age:</label><br>
+            <input type="number" name="age" required><br>
+
+            <label>Gender:</label><br>
+            <select name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <label>Department:</label><br>
+            <select name="department" required>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Business Administration">Business Administration</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Health Sciences">Health Sciences</option>
+                <option value="Arts and Design">Arts and Design</option>
+            </select><br>
+
+            <label>Course Selection:</label><br>
+            <select name="course" required>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+            </select><br>
+
+            <label>Medical Issues (if any):</label><br>
+            <textarea name="medical_info" placeholder="Enter any medical concerns (if applicable)" rows="4"></textarea><br>
+            
+            <button type="submit">Submit Admission</button>
+        </form>
+    </div>
+</body>
+</html>
