@@ -1,0 +1,1 @@
+{'Name': 'Jaynize mugo', 'Email': 'mugojaynize@gmail.com', 'Phone': '0742095175', 'National ID': '42767011', 'Password': 'yvdhvhcc', 'Age': '19', 'Gender': 'female', 'Department': 'mathematics and computer science', 'Course': 'computer science', 'Medical Info': 'myopuc', 'Photo': 'blank', 'KNEC Certificate': 'result slip'}
